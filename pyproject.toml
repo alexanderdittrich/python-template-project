@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.isort]
+profile = "black"
+
+[project]
+name = "bioinspired_learning"
+version = "0.0.1"
+dependencies = [
+    "requests",
+    'importlib-metadata; python_version<"3.8"',
+]
+
+[project.scripts]
+my-client = "bioinspired_learning.placeholder_biolearning:main_cli"

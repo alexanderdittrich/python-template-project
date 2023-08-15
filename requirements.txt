@@ -1,0 +1,32 @@
+numpy
+scipy
+
+# Data handling
+pandas
+h5py
+
+# Learning frameworks
+stable-baselines3
+rl-games
+deap
+
+# ANN frameworks
+torch
+torchsummary
+tensorboard
+
+# Visualisation tools
+matplotlib
+tqdm # progress bar visualisation
+wandb # learning visualisation
+
+# Project management
+black # code auto-formatter
+isort # code auto-formatter imports
+pytest # better Python testing
+flake8 # Python code style and syntax checker
+mypy # Python static type checker
+
+# Documentation
+sphinx
+sphinx_rtd_theme
