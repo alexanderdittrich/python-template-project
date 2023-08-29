@@ -2,7 +2,7 @@
 A template python project for open-sourcing your research project
 
 
-## Install Requirements
+## Install requirements
 
 ```console
 foo@bar:~$ pip install -r requirements.txt
@@ -12,7 +12,7 @@ foo@bar:~$ pip install -r requirements.txt
 
 Python provides a short guide for notation: https://peps.python.org/pep-0008/
 
-- Repository names: As concise as possible, should be descriptive. Lower case with hyphens `lowercase-title-with-hyphens`.
+- Repository names: As concise as possible, should be descriptive. Lower case with hyphens `lowercase-title-with-hyphens`
 - Types like classes, structs: 
 
 ```python
@@ -39,6 +39,14 @@ UPPER_CASE_WITH_UNDERSCORES
 lower_case_with_underscores
 ```
 
+Overall recommendation:
+- Functions' names should start with a verb.
+- Avoid mathematical notations.
+- Each method and class input and output should be typed.
+- A function (or a class) should not take more than 5 arguments, otherwise use data classes instead.
+- Write out input names `compute_solution(arg1=arg1, arg2=arg2)`
+- Use f-strings for string formatting `f"Solution metric: {}"` (https://realpython.com/python-f-strings/)
+
 ## Sphinx Documentation Generator
 
 
@@ -61,14 +69,23 @@ To officially open-source your code and after editing the necessary setup files,
 https://pypi.org/. Congrats! 
 
 ## Code Optimization
-
+Overall recommendations:
+- Use list comprehension when it is possible.
 
 ## Unit Testing
 
+## Collection of useful programming tools
+
+## Managing your repo
+
+
+## Containerization
+Providing finished containers for installation could greatly help other people testing your module. I recommend two containerization solutions: 
+- Singularity https://docs.sylabs.io/guides/latest/user-guide/
+- Docker https://docs.docker.com/get-started/
+
+Example files are provided in this template project later on.
+
 ## Acknowledgements
 
-
 ## Citing and Referencing
-
-
-## Collection of useful programming tools
