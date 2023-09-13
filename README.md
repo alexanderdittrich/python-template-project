@@ -2,7 +2,10 @@
 A template python project for open-sourcing your research project
 
 
-## Install requirements
+## Dependency management
+
+The easiest way to handle dependencies in python is creating and maintaining a requirements.txt.
+
 
 ```console
 foo@bar:~$ pip install -r requirements.txt
@@ -39,16 +42,22 @@ UPPER_CASE_WITH_UNDERSCORES
 lower_case_with_underscores
 ```
 
-Overall recommendation:
+### Overall recommendation:
 - Functions' names should start with a verb.
 - Avoid mathematical notations.
 - Each method and class input and output should be typed.
 - A function (or a class) should not take more than 5 arguments, otherwise use data classes instead.
 - Write out input names `compute_solution(arg1=arg1, arg2=arg2)`
-- Use f-strings for string formatting `f"Solution metric: {}"` (https://realpython.com/python-f-strings/)
+- Use f-strings for string formatting `f"Evaluation metric: {metric}"` (https://realpython.com/python-f-strings/)
 
-## Sphinx Documentation Generator
+## Comments and Documentation
+> Without proper documentation your code is basically useless for other people and also for you (after some time).
 
+- Always add a docstring documentation for each function. This can be later on used in Sphinx or other package documentation generator.
+- Add meaningful documentation. Avoid unnecessary comments and instructions or boilerplate information.
+- Add URLs or cititations if you use the code of others. Some licenses require that you copy the license into your code, if you use or modify the code of someone.
+
+### Sphinx Documention Generator
 
 ## Using module outside the repository
 
