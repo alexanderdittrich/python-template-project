@@ -3,10 +3,13 @@ A template python project for open-sourcing your research project
 
 
 ## Install requirements
+Provide a requirements file, so users can quickly installed required dependencies to run your package.
 
 ```console
 foo@bar:~$ pip install -r requirements.txt
 ```
+
+If further development of the package is required and you call for contribuations, it can make sense to provide an additional requirements-dev.txt file for further helpful packages for contribution (e.g. black, mypy, flake8, ...).
 
 ## Notation and Coding Guideline
 
@@ -80,7 +83,7 @@ Overall recommendations:
 
 
 ## Containerization
-Providing finished containers for installation could greatly help other people testing your module. I recommend two containerization solutions: 
+Providing finished containers for installation could greatly help other people testing your module. Further, it ensures that the running version of your code is maintained and not destroyed by deprecation and modification of functions used in your dependencies. I recommend two containerization solutions: 
 - Singularity https://docs.sylabs.io/guides/latest/user-guide/
 - Docker https://docs.docker.com/get-started/
 
